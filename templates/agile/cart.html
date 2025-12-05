@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5">
+    <h1 class="text-center text-white display-6">Cart</h1>
+    <ol class="breadcrumb justify-content-center mb-0">
+        <li class="breadcrumb-item"><a href="{% url 'shop' %}">Shop</a></li>
+ 
+    </ol>
+</div>
+<!-- Page Header End -->
+
+<div class="container py-5">
+    <h2>Your Cart</h2>
+
+    {% if items %}
+    <table class="table table-bordered align-middle">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Image</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Subtotal</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+            <tr>
+                <!-- Product Title -->
+                <td>{{ item.product.title }}</td>
+
+                <!-- Product Image -->
+                <td>
+                    <img src="{{ item.product.image.url }}" alt="{{ item.product.title }}" 
+                         style="width:80px; height:80px; object-fit:cover; border-radius:5px;">
+                </td>
+
+                <!-- Quantity -->
+                <td>{{ item.quantity }}</td>
+
+                <!-- Price -->
+                <td>₦{{ item.product.price }}</td>
+
+                <!-- Subtotal -->
+                <td>₦{{ item.subtotal }}</td>
+
+                <!-- Actions -->
+                <td>
+                    <a href="{% url 'update_cart' item.product.id 'increase' %}" class="btn btn-sm btn-secondary">+</a>
+                    <a href="{% url 'update_cart' item.product.id 'decrease' %}" class="btn btn-sm btn-secondary">-</a>
+                    <a href="{% url 'remove_from_cart' item.product.id %}" class="btn btn-sm btn-danger">Remove</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="d-flex justify-content-between align-items-center mt-4">
+        <h3>Total: ₦{{ total }}</h3>
+        <a href="{% url 'checkout' %}" class="btn btn-success btn-lg">Proceed to Checkout</a>
+    </div>
+
+    {% else %}
+    <p class="text-muted">Your cart is empty.</p>
+    {% endif %}
+</div>
+
+{% endblock %}

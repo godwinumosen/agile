@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5">
+    <h1 class="text-center text-white display-6">Checkout</h1>
+    <ol class="breadcrumb justify-content-center mb-0">
+        <li class="breadcrumb-item"><a href="{% url 'shop' %}">Home</a></li>
+        <li class="breadcrumb-item active text-white">Shop</li>
+    </ol>
+</div>
+<!-- Page Header End -->
+
+<div class="container py-5">
+    <h2 class="mb-4">Checkout</h2>
+
+    {% if items %}
+    <table class="table table-bordered align-middle">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Image</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+            <tr>
+                <!-- Product Name -->
+                <td>{{ item.product.title }}</td>
+
+                <!-- Product Image -->
+                <td>
+                    <img src="{{ item.product.image.url }}" alt="{{ item.product.title }}" 
+                         style="width:60px; height:60px; object-fit:cover; border-radius:5px;">
+                </td>
+
+                <!-- Quantity -->
+                <td>{{ item.quantity }}</td>
+
+                <!-- Price -->
+                <td>₦{{ item.product.price }}</td>
+
+                <!-- Subtotal -->
+                <td>₦{{ item.subtotal }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="d-flex justify-content-between align-items-center mt-4">
+        <h4>Total: ₦{{ total }}</h4>
+        <form method="POST" action="{% url 'checkout' %}">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-success btn-lg">Pay Now with Paystack</button>
+        </form>
+    </div>
+
+    {% else %}
+    <p class="text-muted">Your cart is empty. <a href="{% url 'shop' %}">Go back to shop</a></p>
+    {% endif %}
+</div>
+
+{% endblock %}
