@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView,ListView
 from django.http import HttpResponse
 from django.conf import settings
 from .models import Store
@@ -6,6 +7,10 @@ import requests
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 
+
+#The main HomeView page
+def home (request):
+    return render (request, 'agile/home.html') 
 
 # Display all products
 def shop(request):

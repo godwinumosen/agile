@@ -200,8 +200,12 @@ a {
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../img/hero-img.jpg);
-    background-position: center center;
+    background: linear-gradient(
+        rgba(128, 0, 128, 0.6),
+        rgba(128, 0, 128, 0.6)
+    ),
+    url("../img/Ibuprofen.jpeg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
