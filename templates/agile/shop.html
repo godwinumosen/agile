@@ -41,11 +41,21 @@
 
                     <!-- Search Box -->
                     <div class="col-xl-3 mb-4">
+                        <form action="{% url 'search' %}" method="GET">
                         <div class="input-group w-100 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="Search products..." aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                            <input type="search" name="q" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1" required>
+                             <button type="submit" class="input-group-text p-3" id="search-icon-1"><i class="fa fa-search"></i></button>
                         </div>
+                           </form>
                     </div>
+
+                    
+                        
+                       
+                 
+
+
+                    
 
                     <!-- Product Grid -->
                     <div class="col-lg-9">

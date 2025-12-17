@@ -3,6 +3,8 @@ from django.http import HttpResponse
 from django.conf import settings
 from .models import Store
 import requests
+from django.db.models import Q
+
 
 # Display all products
 def shop(request):
@@ -108,4 +110,18 @@ def payment_success(request):
 
 
 
+def search_products(request):
+    query = request.GET.get("q", "").strip()
 
+    products = Store.objects.none()
+
+    if query:
+        products = Store.objects.filter(
+            Q(title__icontains=query) |
+            Q(description__icontains=query)
+        )
+
+    return render(request, "agile/search.html", {
+        "products": products,
+        "query": query
+    })
