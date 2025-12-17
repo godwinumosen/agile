@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'agilepharm',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -148,3 +149,8 @@ PAYSTACK_SECRET_KEY = 'your-secret-key'
 # or for Flutterwave
 FLUTTERWAVE_PUBLIC_KEY = 'your-public-key'
 FLUTTERWAVE_SECRET_KEY = 'your-secret-key'
+
+LOGIN_URL = 'login'          # redirects non-authenticated users
+LOGIN_REDIRECT_URL = 'shop'  # where to go after login
+LOGOUT_REDIRECT_URL = 'login'
+  
