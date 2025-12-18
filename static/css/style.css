@@ -157,6 +157,38 @@ a {
     color: #800080;
 }
 
+
+/* ===============================
+   AgilePharm Ecosystem ONLY
+   =============================== */
+
+.ecosystem-section .ecosystem-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ecosystem-section .ecosystem-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+}
+
+.ecosystem-section .icon-wrapper {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.ecosystem-section .ecosystem-card:hover .icon-wrapper {
+  transform: scale(1.15);
+}
+
+
+
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -208,6 +240,12 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.display-6 {
+    font-size: 20;
+    font-weight: 800;
+    line-height: 1;
 }
 
 .carousel-item {
