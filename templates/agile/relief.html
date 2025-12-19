@@ -2,24 +2,7 @@
 {% load static %}
 {% block content %}
 
-        <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Search End -->
+     
 
 
   <!-- Hero Start -->
@@ -28,13 +11,12 @@
         <div class="row g-5 justify-content-center align-items-center">
             <div class="col-md-12 col-lg-7 text-center">
 
-                <h1 class="mb-5 display-3 text-white">
-                    Building the Future of Pharmacy in Africa
-                </h1>
+                <h3 class="mb-5 display-3 text-white">
+                    Empowering Pharmacists.Supporting Pharmacies.
+                </h3>
 
                 <p class="mb-4 text-white">
-                    An evolving ecosystem connecting pharmacists, pharmacies, and innovation —
-                    empowering professionals and communities across the continent.
+                   Join the community bridging flexible pharmacy practice and reliable staffing — anywhere, anytime.
                 </p>
 
                 <div class="d-flex justify-content-center flex-column flex-sm-row gap-3">
@@ -241,6 +223,179 @@
   </div>
 </section>
 <!-- How It Works End -->
+
+<section class="py-5">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-primary">
+        Why Choose AgilePharm Relief
+      </h2>
+      <hr class="mx-auto w-25 border-3 opacity-100">
+    </div>
+
+    <!-- Cards -->
+    <div class="row g-4 justify-content-center">
+
+      <!-- Pharmacists -->
+      <div class="col-lg-5 col-md-6">
+        <div class="card h-100 shadow-sm border-2 rounded-4">
+          <div class="card-body p-4">
+
+            <div class="d-flex align-items-center mb-4">
+              <div
+                class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center me-3"
+                style="width:48px;height:48px;"
+              >
+                <i class="bi bi-person-check fs-4"></i>
+              </div>
+              <h5 class="fw-semibold mb-0">For Pharmacists</h5>
+            </div>
+
+            <ul class="list-unstyled">
+              <li class="d-flex mb-3">
+                <i class="bi bi-check-circle text-primary me-2"></i>
+                Flexible work schedules that fit your lifestyle
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bi bi-check-circle text-primary me-2"></i>
+                Access to verified pharmacy opportunities
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bi bi-check-circle text-primary me-2"></i>
+                Fair and competitive rates
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bi bi-check-circle text-primary me-2"></i>
+                Community support and networking
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bi bi-check-circle text-primary me-2"></i>
+                Professional development webinars
+              </li>
+              <li class="d-flex">
+                <i class="bi bi-check-circle text-primary me-2"></i>
+                Future-ready training with AI tools
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Pharmacy Owners -->
+      <div class="col-lg-5 col-md-6">
+        <div class="card h-100 shadow-sm border-2 rounded-4">
+          <div class="card-body p-4">
+
+            <div class="d-flex align-items-center mb-4">
+              <div
+                class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center me-3"
+                style="width:48px;height:48px;"
+              >
+                <i class="bi bi-building fs-4"></i>
+              </div>
+              <h5 class="fw-semibold mb-0">For Pharmacy Owners</h5>
+            </div>
+
+            <ul class="list-unstyled">
+              <li class="d-flex mb-3">
+                <i class="bi bi-check-circle text-primary me-2"></i>
+                Access to trusted, verified professionals
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bi bi-check-circle text-primary me-2"></i>
+                Faster hiring process and reduced downtime
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bi bi-check-circle text-primary me-2"></i>
+                PCN-compliant staffing solutions
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bi bi-check-circle text-primary me-2"></i>
+                Local proximity matching
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bi bi-check-circle text-primary me-2"></i>
+                Reliable coverage for short-term needs
+              </li>
+              <li class="d-flex">
+                <i class="bi bi-check-circle text-primary me-2"></i>
+                Partnership opportunities with verified network
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- Image -->
+      <div class="col-lg-6 text-center text-lg-start">
+        <img
+            src="{% static 'img/community.jpg' %}"
+            alt="AgilePharm Community"
+            class="img-fluid shadow"
+            style="border-radius: 20px;">        
+      </div>
+      <!-- Content -->
+      <div class="col-lg-6">
+        <!-- Badge -->
+        <span class="badge rounded-pill bg-primary bg-opacity-10 text-white mb-3 px-3 py-2">
+          <i class="bi bi-people me-1"></i> Active Community
+        </span>
+
+        <!-- Heading -->
+        <h2 class="fw-bold mb-3">
+          Join the AgilePharm Relief Community
+        </h2>
+
+        <!-- Description -->
+        <p class="text-muted mb-4">
+          Our WhatsApp community is the foundation of AgilePharm Relief.
+          Connect with fellow pharmacists, pharmacy owners, and industry
+          partners in real-time.
+        </p>
+
+        <!-- List -->
+        <ul class="list-unstyled mb-4">
+          <li class="d-flex mb-2">
+            <i class="bi bi-dot fs-4 me-2"></i>
+            Access exclusive job opportunities and relief postings
+          </li>
+          <li class="d-flex mb-2">
+            <i class="bi bi-dot fs-4 me-2"></i>
+            Participate in educational webinars and training sessions
+          </li>
+          <li class="d-flex mb-2">
+            <i class="bi bi-dot fs-4 me-2"></i>
+            Network with verified professionals across Nigeria
+          </li>
+          <li class="d-flex">
+            <i class="bi bi-dot fs-4 me-2"></i>
+            Stay updated on industry news and best practices
+          </li>
+        </ul>
+
+        <!-- Button -->
+        <a href="#" class="btn btn-primary btn-lg rounded-pill px-4">
+          <i class="bi bi-whatsapp me-2"></i>
+          Join the WhatsApp Community
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
 
 
 

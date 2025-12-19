@@ -15,6 +15,9 @@ def home (request):
 def relief (request):
     return render (request, 'agile/relief.html')
 
+def futurepharm (request):
+    return render (request, 'agile/futurepharm.html')
+
 # Display all products
 def shop(request):
     products = Store.objects.all()

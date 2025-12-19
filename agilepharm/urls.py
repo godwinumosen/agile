@@ -17,5 +17,6 @@ urlpatterns = [
     path('payment-success/', views.payment_success, name='payment_success'),
     path("search/", views.search_products, name="search"),
     path('relief/', views.relief, name='relief'),
+    path('futurepharm/', views.futurepharm, name='futurepharm'),
     
 ]
