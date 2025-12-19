@@ -12,6 +12,9 @@ from django.db.models import Q
 def home (request):
     return render (request, 'agile/home.html') 
 
+def relief (request):
+    return render (request, 'agile/relief.html')
+
 # Display all products
 def shop(request):
     products = Store.objects.all()

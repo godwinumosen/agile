@@ -183,6 +183,18 @@ a {
   transition: transform 0.3s ease;
 }
 
+.carousel-inner img {
+  height: 420px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .carousel-inner {
+    border-radius: 20px;
+  }
+}
+
+
 .ecosystem-section .ecosystem-card:hover .icon-wrapper {
   transform: scale(1.15);
 }

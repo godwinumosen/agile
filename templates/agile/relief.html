@@ -1,0 +1,248 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+  <!-- Hero Start -->
+<div class="container-fluid py-5 mb-5 hero-header">
+    <div class="container py-5">
+        <div class="row g-5 justify-content-center align-items-center">
+            <div class="col-md-12 col-lg-7 text-center">
+
+                <h1 class="mb-5 display-3 text-white">
+                    Building the Future of Pharmacy in Africa
+                </h1>
+
+                <p class="mb-4 text-white">
+                    An evolving ecosystem connecting pharmacists, pharmacies, and innovation —
+                    empowering professionals and communities across the continent.
+                </p>
+
+                <div class="d-flex justify-content-center flex-column flex-sm-row gap-3">
+                    <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">
+                        Join on WhatsApp
+                    </a>
+                    <a class="btn btn-outline-primary rounded-pill text-white py-3 px-5" href="#">
+                        Explore the Ecosystem
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+
+
+<!-- About AgilePharm Relief Section -->
+<section class="py-5 bg-white">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-danger">
+        About AgilePharm Relief
+      </h2>
+
+      <div class="mx-auto bg-danger my-3"
+           style="width: 90px; height: 4px; border-radius: 2px;">
+      </div>
+
+      <p class="text-muted mx-auto mt-4"
+         style="max-width: 900px; line-height: 1.8;">
+        AgilePharm Relief is Nigeria's pioneering digital platform connecting
+        pharmacists with short-term pharmacy opportunities while helping pharmacy
+        owners find qualified relief pharmacists quickly and seamlessly.
+        We're building a verified network of professionals committed to flexible,
+        tech-enabled pharmacy staffing solutions across Africa.
+      </p>
+    </div>
+
+    <!-- Cards -->
+    <div class="row justify-content-center g-4 mt-5">
+
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4">
+          <h5 class="fw-bold text-danger mb-3">
+            Community-Driven
+          </h5>
+          <p class="text-muted mb-0">
+            A thriving WhatsApp community with webinars, training sessions,
+            and professional collaborations.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4">
+          <h5 class="fw-bold text-danger mb-3">
+            Mission-Focused
+          </h5>
+          <p class="text-muted mb-0">
+            Creating flexible pharmacy staffing solutions that meet PCN standards
+            and empower professionals.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm rounded-4 text-center p-4">
+          <h5 class="fw-bold text-danger mb-3">
+            Future-Ready
+          </h5>
+          <p class="text-muted mb-0">
+            Bridging relief pharmacists, pharmacy owners, and the evolving
+            digital pharmacy ecosystem.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- About AgilePharm Relief End -->
+
+
+<!-- How It Works Section -->
+<section class="py-5 bg-white">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-danger">
+        How It Works
+      </h2>
+
+      <div class="mx-auto bg-danger my-3"
+           style="width: 90px; height: 4px; border-radius: 2px;"></div>
+
+      <p class="text-muted mt-4">
+        Three simple steps to connect pharmacists and pharmacies
+      </p>
+    </div>
+
+    <!-- Steps -->
+    <div class="row g-4 justify-content-center mt-5">
+
+      <!-- Step 1 -->
+      <div class="col-md-6 col-lg-4 position-relative">
+        <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+
+          <!-- Step Number -->
+          <span class="position-absolute top-0 start-100 translate-middle
+                       badge rounded-circle bg-danger fs-6"
+                style="width: 48px; height: 48px; line-height: 38px;">
+            01
+          </span>
+
+          <!-- Icon -->
+          <div class="mb-4">
+            <div class="rounded-circle bg-danger bg-opacity-10
+                        d-inline-flex align-items-center justify-content-center"
+                 style="width: 64px; height: 64px;">
+              <i class="bi bi-person-plus fs-4 text-danger"></i>
+            </div>
+          </div>
+
+          <h5 class="fw-bold text-danger mb-3">
+            Create Your Profile
+          </h5>
+
+          <p class="text-muted mb-0">
+            Pharmacists create profiles and indicate their availability
+            for relief work.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="col-md-6 col-lg-4 position-relative">
+        <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+
+          <span class="position-absolute top-0 start-100 translate-middle
+                       badge rounded-circle bg-danger fs-6"
+                style="width: 48px; height: 48px; line-height: 38px;">
+            02
+          </span>
+
+          <div class="mb-4">
+            <div class="rounded-circle bg-danger bg-opacity-10
+                        d-inline-flex align-items-center justify-content-center"
+                 style="width: 64px; height: 64px;">
+              <i class="bi bi-clipboard-check fs-4 text-danger"></i>
+            </div>
+          </div>
+
+          <h5 class="fw-bold text-danger mb-3">
+            Post Opportunities
+          </h5>
+
+          <p class="text-muted mb-0">
+            Pharmacies post their short-term or locum staffing
+            needs with requirements.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="col-md-6 col-lg-4 position-relative">
+        <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+
+          <span class="position-absolute top-0 start-100 translate-middle
+                       badge rounded-circle bg-danger fs-6"
+                style="width: 48px; height: 48px; line-height: 38px;">
+            03
+          </span>
+
+          <div class="mb-4">
+            <div class="rounded-circle bg-danger bg-opacity-10
+                        d-inline-flex align-items-center justify-content-center"
+                 style="width: 64px; height: 64px;">
+              <i class="bi bi-link-45deg fs-4 text-danger"></i>
+            </div>
+          </div>
+
+          <h5 class="fw-bold text-danger mb-3">
+            Get Matched
+          </h5>
+
+          <p class="text-muted mb-0">
+            AgilePharm Relief connects both through verified
+            matches and local proximity.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- How It Works End -->
+
+
+
+
+{% endblock %}

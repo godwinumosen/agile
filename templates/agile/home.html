@@ -176,64 +176,175 @@
 
 
 
-
-
- <!-- Features Section Start -->
+<!-- Features Section Start -->
 <section class="py-5 bg-white ecosystem-section">
-  <div class="container text-center">
 
-    <!-- Section Header -->
-    <h2 class="fw-bold text-primary mb-2"> Webinars & Events</h2>
+  <!-- SECTION HEADING -->
+  <div class="container text-center mb-5">
+    <h1 class="fw-bold text-primary mb-3">
+      Webinars & Events
+    </h1>
+    <p class="text-secondary mx-auto" style="max-width: 700px;">
+      Join our upcoming webinar series connecting pharmacists to experts in
+      telepharmacy, supply chain, health tech, and mental health.
+    </p>
+  </div>
 
-    <div class="mx-auto bg-primary rounded mb-4" style="width: 60px; height: 4px;"></div>
+  <!-- IMAGE-ONLY CAROUSEL -->
+  <div id="featuresCarousel"
+       class="carousel slide"
+       data-bs-ride="carousel"
+       data-bs-interval="3000"
+       data-bs-pause="false"
+       data-bs-wrap="true">
 
-    <p class="text-secondary mb-5 px-lg-5">
-      Join our upcoming webinar series connecting pharmacists to experts in telepharmacy,<br>
-      supply chain, health tech, and mental health in pharmacy practice.</p>
+    <div class="carousel-inner rounded-4 shadow">
 
-    <!-- Features Grid -->
-    <div class="row g-4 justify-content-center" >
-      
-      <!-- Feature Item -->
-      <div class="col-md-6 col-lg-3">
-        <div class="feature-item text-center rounded bg-light p-4 h-100">
-          <div class="feature-icon btn-square rounded-circle bg-secondary mb-4 mx-auto">
-            <i class="fas fa-car-side fa-3x text-white"></i>
-          </div>
-          <h5> Regular Schedule</h5>
-          <p class="mb-0">Monthly webinars and training sessions</p>
-        </div>
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="{% static 'img/screen.png' %}"
+             class="d-block w-10"
+             alt="Webinar Event 1">
       </div>
 
-      <!-- Feature Item -->
-      <div class="col-md-6 col-lg-3">
-        <div class="feature-item text-center rounded bg-light p-4 h-100">
-          <div class="feature-icon btn-square rounded-circle bg-secondary mb-4 mx-auto">
-            <i class="fas fa-exchange-alt fa-3x text-white"></i>
-          </div>
-          <h5>Expert Speakers</h5>
-          <p class="mb-0">Industry leaders and healthcare professionals</p>
-        </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="{% static 'img/screen.png' %}"
+             class="d-block w-10"
+             alt="Webinar Event 2">
       </div>
 
-      <!-- Feature Item -->
-      <div class="col-md-6 col-lg-3">
-        <div class="feature-item text-center rounded bg-light p-4 h-100">
-          <div class="feature-icon btn-square rounded-circle bg-secondary mb-4 mx-auto">
-            <i class="fas fa-phone-alt fa-3x text-white"></i>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img src="{% static 'img/screen.png' %}"
+             class="d-block w-10"
+             alt="Webinar Event 3">
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-item">
+        <img src="{% static 'img/screen.png' %}"
+             class="d-block w-10"
+             alt="Webinar Event 4">
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button"
+            data-bs-target="#featuresCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button"
+            data-bs-target="#featuresCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+</section>
+<!-- Features Section End -->
+
+
+
+
+
+
+
+
+<!-- Digital Pharmacy Storefront Section -->
+<section class="py-5 bg-white">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-danger">
+        Launch Your Digital Pharmacy Storefront
+      </h2>
+      <div class="mx-auto bg-danger mt-3"
+           style="width: 80px; height: 4px; border-radius: 2px;"></div>
+    </div>
+
+    <!-- Main Card -->
+    <div class="card border-0 shadow-lg rounded-4 mx-auto"
+         style="max-width: 900px; background-color: #fff6fa;">
+
+      <div class="card-body p-5 text-center">
+
+        <!-- Icon -->
+        <div class="mb-4">
+          <div class="rounded-circle bg-danger bg-opacity-10 d-inline-flex
+                      align-items-center justify-content-center"
+               style="width: 70px; height: 70px;">
+            <i class="bi bi-shop fs-3 text-danger"></i>
           </div>
-          <h5>Interactive Sessions</h5>
-          <p class="mb-0">Live Q&A and networking opportunities</p>
         </div>
+
+        <!-- Title -->
+        <h4 class="fw-bold text-danger mb-3">
+          Plug-and-Play Pharmacy Platform
+        </h4>
+
+        <!-- Description -->
+        <p class="text-muted mb-5 px-lg-5">
+          AgilePharm is building Africa's first plug-and-play digital pharmacy
+          storefront — made by pharmacists, for pharmacists.
+          Join our waitlist to be among the first to access it.
+        </p>
+
+        <!-- Features -->
+        <div class="row text-start mb-5">
+
+          <!-- Left -->
+          <div class="col-md-6 mb-4 mb-md-0">
+            <div class="bg-white rounded-4 p-4 h-100 shadow-sm">
+              <h6 class="fw-bold text-danger mb-3">What to Expect:</h6>
+              <ul class="mb-0 ps-3">
+                <li>Easy-to-set-up digital storefronts</li>
+                <li>PCN-compliant operations</li>
+                <li>Connected to verified premises</li>
+                <li>Integrated payment systems</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="col-md-6">
+            <div class="bg-white rounded-4 p-4 h-100 shadow-sm">
+              <h6 class="fw-bold text-danger mb-3">Future Features:</h6>
+              <ul class="mb-0 ps-3">
+                <li>AI-enabled request tracking</li>
+                <li>Integrated logistics system</li>
+                <li>Nearby delivery options</li>
+                <li>Inventory management</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Email Form -->
+        <form class="row justify-content-center g-3">
+          <div class="col-md-6">
+            <input type="email"
+                   class="form-control form-control-lg rounded-pill"
+                   placeholder="Enter your email">
+          </div>
+          <div class="col-md-auto">
+            <button type="submit"
+                    class="btn btn-danger btn-lg rounded-pill px-4">
+              Join the Waitlist
+            </button>
+          </div>
+        </form>
+
       </div>
     </div>
-  <div class="mt-5">
-  <a href="#" class="btn btn-danger btn-lg rounded-pill">
-    View Upcoming Webinars
-  </a>
-</div>
 
+  </div>
 </section>
+
+
 
 
 <!-- Join the Movement Section -->
