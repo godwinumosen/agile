@@ -9,7 +9,7 @@ def register(request):
         if form.is_valid():
             user = form.save()
             login(request, user)  # automatically log in after registration
-            return redirect('shop')  # redirect to shop after login
+            return redirect('home')  # redirect to home after login
     else:
         form = UserCreationForm()
     return render(request, 'accounts/register.html', {'form': form})

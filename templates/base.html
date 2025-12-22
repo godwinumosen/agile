@@ -61,56 +61,54 @@
             </div>
         </div>
     </div>
+
     <div class="container px-0">
         <nav class="navbar navbar-light bg-white navbar-expand-xl">
             <a href="{% url 'home' %}" class="navbar-brand"><h1 class="text-primary display-6">AgilePharm</h1></a>
             <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars text-primary"></span>
             </button>
+
             <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
+
+                    <!-- Always visible -->
                     <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
 
                     {% if user.is_authenticated %}
-                       
-                        <!-- Logout form -->
-                        <form method="post" action="{% url 'logout' %}" class="d-inline nav-item">
-                            {% csrf_token %}
-                            <button type="submit" class="btn btn-link nav-link p-0 m-0"> </button>
-                        </form>
-                    {% else %}
-                        <a href="{% url 'login' %}" class="nav-item nav-link active">Login</a>
-                        <a href="{% url 'register' %}" class="nav-item nav-link active">Register</a>
-                    {% endif %}
-
-                    <a href="{% url 'relief' %}" class="nav-item nav-link active">AgilePharm Relief</a>
-                    <a href="{% url 'futurepharm' %}" class="nav-item nav-link active">FuturePharm AI</a>
-                       <div class="nav-item dropdown">
+                        <!-- Full menu visible only to logged-in users -->
+                        <a href="{% url 'relief' %}" class="nav-item nav-link active">AgilePharm Relief</a>
+                        <a href="{% url 'futurepharm' %}" class="nav-item nav-link active">FuturePharm AI</a>
+                        <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Online Pharmacy</a>
                             <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                 <a href="{% url 'shop' %}" class="dropdown-item">Shop</a>
+                                <a href="{% url 'shop' %}" class="dropdown-item">Shop</a>
                                 <a href="{% url 'cart' %}" class="dropdown-item">Cart</a>
                                 <a href="{% url 'checkout' %}" class="dropdown-item">Checkout</a>
                             </div>
                         </div>
-                    <a href="{% url 'career' %}" class="nav-item nav-link active">Careers</a>
-                    <a href="{% url 'blog' %}" class="nav-item nav-link active">Blog</a>
-                     <a href=" " class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0"target="_blank"> Join Community</a>
+                        <a href="{% url 'career' %}" class="nav-item nav-link active">Careers</a>
+                        <a href="{% url 'blog' %}" class="nav-item nav-link active">Blog</a>
+                        <a href="https://wa.me/+2348061316548?text=Hi Agile Pharm?" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0" target="_blank">Join Community</a>
+                    {% else %}
+                        <!-- Only Login/Register for non-authenticated users -->
+                        <a href="{% url 'login' %}" class="nav-item nav-link active">Login</a>
+                        <a href="{% url 'register' %}" class="nav-item nav-link active">Register</a>
+                    {% endif %}
+
                 </div>
 
                 <div class="d-flex m-3 me-0">
                     {% if user.is_authenticated %}
-                      
+                        <!-- Cart icon for logged-in users -->
                         <a href="{% url 'cart' %}" class="position-relative me-4 my-auto">
                             <i class="fa fa-shopping-bag fa-2x"></i>
                             <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">
                                 {{ request.session.cart|length|default:"0" }}
                             </span>
                         </a>
-                    {% endif %}
 
-                    <!-- Login/Logout icon -->
-                    {% if user.is_authenticated %}
+                        <!-- Logout button -->
                         <form method="post" action="{% url 'logout' %}" class="d-inline my-auto ms-2">
                             {% csrf_token %}
                             <button type="submit" class="btn btn-link p-0 m-0">
@@ -118,18 +116,17 @@
                             </button>
                         </form>
                     {% else %}
+                        <!-- Login icon for non-authenticated users -->
                         <a href="{% url 'login' %}" class="my-auto ms-2">
                             <i class="fas fa-sign-in-alt fa-2x"></i>
                         </a>
                     {% endif %}
-
                 </div>
             </div>
         </nav>
     </div>
 </div>
 <!-- Navbar End -->
-
 
 
     
