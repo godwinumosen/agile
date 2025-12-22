@@ -2,39 +2,94 @@
 {% load static %}
 {% block content %}
 
-  <!-- Hero Start -->
-<div class="container-fluid py-5 mb-5 hero-header">
-    <div class="container py-5">
-        <div class="row g-5 justify-content-center align-items-center">
-            <div class="col-md-12 col-lg-7 text-center">
 
-                <h1 class="mb-5 display-2 text-white">
-                    Agile Careers
-                </h1>
+<!-- HERO SECTION -->
+<div class="position-relative text-white container-fluid py-5 mb-5 hero-header" style="height: 80vh; background-color: #6f42c1;">
+  
+  <div class="container py-5">
+    
+    <!-- Content -->
+    <div class="d-flex flex-column justify-content-center text-center w-100 h-100 px-3" style="padding-top: vh;">
+      <h1 class="fw-bold display-4 text-white">
+        Agile Careers
+      </h1>
 
-                 <h5 class="mb-1 display- text-white">
-                    Find Your Next Pharmacy or Healthcare Role
-                </h5>
+      <p class="mt-3 text-white">Find Your Next Pharmacy or Healthcare Role
+      </p>
 
-                <p class="mb-4 text-white">
-                    Curated job listings for pharmacists and healthcare professionals across Nigeria — updated weekly
-                </p>
+      <p class="mt-3 text-white">Curated job listings for pharmacists and healthcare professionals across Nigeria — <br>updated weekly
+      </p>
 
-
-                <div class="d-flex justify-content-center flex-column flex-sm-row gap-3">
-                    <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">
-                        🚀 Browse Roles
-                    </a>
-                    <a class="btn btn-outline-primary rounded-pill text-white py-3 px-5" href="#">
-                       Join Our Community
-                    </a>
-                </div>
-
-            </div>
+      <div class="d-flex justify-content-center flex-column flex-sm-row gap-3">
+          <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">
+              Browse Roles
+          </a>
+          <a class="btn btn-outline-primary rounded-pill text-white py-3 px-5" href="#">
+              Join Our Community
+          </a>
         </div>
     </div>
+  </div>
 </div>
 <!-- Hero End -->
+
+
+<!-- SEARCH & FILTER SECTION -->
+<div class="container my-5">
+
+  <!-- Search input -->
+  <div class="mb-4">
+    <input
+      type="text"
+      class="form-control form-control-lg "
+      placeholder="Search by job title, location, or requirements...">
+  </div>
+
+  <!-- Filters -->
+  <div class="row g-3 ">
+    <div class="col-md-3 ">
+      <select class="form-select text-primary">
+        <option selected>All Locations</option>
+        <option>Lagos</option>
+        <option>Abuja</option>
+        <option>Port Harcourt</option>
+      </select>
+    </div>
+
+    <div class="col-md-3">
+      <select class="form-select text-primary">
+        <option selected>All Types</option>
+        <option>Full Time</option>
+        <option>Part Time</option>
+        <option>Contract</option>
+      </select>
+    </div>
+
+    <div class="col-md-3">
+      <select class="form-select text-primary">
+        <option selected>All Ranges</option>
+        <option>₦100k – ₦200k</option>
+        <option>₦200k – ₦400k</option>
+        <option>₦400k+</option>
+      </select>
+    </div>
+
+    <div class="col-md-3">
+      <select class="form-select text-primary">
+        <option selected>All Levels</option>
+        <option>Entry Level</option>
+        <option>Mid Level</option>
+        <option>Senior Level</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Results count -->
+  <div class="text-center text-muted mt-4 text-primary">
+    Showing <strong>8</strong> roles
+  </div>
+</div>
+
 
 
 {% endblock %}
