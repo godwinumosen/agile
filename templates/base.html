@@ -51,18 +51,17 @@
     <div class="container topbar bg-primary d-none d-lg-block">
         <div class="d-flex justify-content-between">
             <div class="top-info ps-2">
-                <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123 Street, New York</a></small>
-                <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@Example.com</a></small>
+                <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">+234 802 234 5695</a></small>
+                <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">agilePharm@gmail.com</a></small>
             </div>
             <div class="top-link pe-2">
                 <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
                 <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
-                <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
             </div>
         </div>
-    </div>
+    </div> 
 
-    <div class="container px-0">
+    <div class="container px-0 ">
         <nav class="navbar navbar-light bg-white navbar-expand-xl">
             <a href="{% url 'home' %}" class="navbar-brand"><h1 class="text-primary display-6">AgilePharm</h1></a>
             <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -158,67 +157,66 @@
 
     {% block content %}
     {% endblock  %}
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
-        <div class="container py-5">
-            <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
-                <div class="row g-4">
-                  
-                    <div class="col-lg-6">
-                        <div class="position-relative mx-auto">
-                            <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
-                            <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="d-flex justify-content-end pt-3">
-                            <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+<!-- Footer Start -->
+<div class="container-fluid text-white-50 footer pt-5 mt-5" style="background-color: #800080;">
+    <div class="container py-5">
+        <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5);">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="position-relative mx-auto">
+                        <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
+                        <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button>
                     </div>
                 </div>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-item">
-                        <h4 class="text-light mb-3">AgilePharm</h4>
-                        <p class="mb-4">Building the future of pharmacy in Africa through an integrated ecosystem of digital solutions.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="d-flex flex-column text-start footer-item">
-                        <h4 class="text-light mb-3">Quick Links</h4>
-                        <a class="btn-link" href="">AgilePharm Relief</a>
-                        <a class="btn-link" href="">FuturePharm AI</a>
-                        <a class="btn-link" href="">Online Pharmacy</a>
-                        <a class="btn-link" href="">Blog</a>
-                        <a class="btn-link" href="">Careers</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="d-flex flex-column text-start footer-item">
-                        <h4 class="text-light mb-3">Community</h4>
-                        <a class="btn-link" href="">Join WhatsApp</a>
-                        <a class="btn-link" href="">Webinars</a>
-                        <a class="btn-link" href="">Events</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-item">
-                        <h4 class="text-light mb-3">Contact</h4>
-                        <p>Address: Lagos 48247</p>
-                        <p>Email: agilePharm@gmail.com</p>
-                        <p>Phone: +234 7067 8910</p>
-                        <img src="{% static 'img/payment.png'%}" class="img-fluid" alt="">
+                <div class="col-lg-3">
+                    <div class="d-flex justify-content-end pt-3">
+                        <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-item">
+                    <h4 class="text-light mb-3">AgilePharm</h4>
+                    <p class="mb-4 text-white">Building the future of pharmacy in Africa through an integrated ecosystem of digital solutions.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column text-start text-white footer-item">
+                    <h4 class="text-light mb-3">Quick Links</h4>
+                    <a class="btn-link text-white" href="">AgilePharm Relief</a>
+                    <a class="btn-link text-white" href="">FuturePharm AI</a>
+                    <a class="btn-link text-white" href="">Online Pharmacy</a>
+                    <a class="btn-link text-white" href="">Blog</a>
+                    <a class="btn-link text-white" href="">Careers</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column text-start footer-item">
+                    <h4 class="text-light mb-3">Community</h4>
+                    <a class="btn-link text-white" href="">Join WhatsApp</a>
+                    <a class="btn-link text-white" href="">Webinars</a>
+                    <a class="btn-link text-white" href="">Events</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-item">
+                    <h4 class="text-light mb-3">Contact</h4>
+                    <p class="text-white">Address: Lagos 48247</p>
+                    <p class="text-white">Email: agilePharm@gmail.com</p>
+                    <p class="text-white">Phone: +234 7067 8910</p>
+                    <img src="{% static 'img/payment.png'%}" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Footer End -->
+</div>
+<!-- Footer End -->
+
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
