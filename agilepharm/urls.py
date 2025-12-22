@@ -18,5 +18,7 @@ urlpatterns = [
     path("search/", views.search_products, name="search"),
     path('relief/', views.relief, name='relief'),
     path('futurepharm/', views.futurepharm, name='futurepharm'),
+    path('career/', views.career, name='career'),
+    path('blog/', views.blog, name='blog'),
     
 ]

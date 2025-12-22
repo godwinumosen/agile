@@ -137,3 +137,10 @@ def search_products(request):
         "products": products,
         "query": query
     })
+    
+    
+def blog (request):
+    return render (request, 'agile/blog.html')
+
+def career (request):
+    return render (request, 'agile/career.html')
