@@ -20,8 +20,17 @@ def futurepharm (request):
 
 # Display all products
 def shop(request):
+    category = request.GET.get('category')
     products = Store.objects.all()
-    return render(request, 'agile/shop.html', {"products": products})
+
+    if category:
+        products = products.filter(category=category)
+
+    return render(request, 'agile/shop.html', {
+        'products': products,
+        'active_category': category
+    })
+
 
 # Add item to cart
 def add_to_cart(request, product_id):
