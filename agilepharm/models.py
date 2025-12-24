@@ -13,7 +13,6 @@ class Store(models.Model):
         ('vitamins', 'Vitamins & Supplements'),
         ('skin', 'Skin & Beauty'),
         ('devices', 'Health Devices'),
-        ('Health', 'Health Devices'),
         ('Prescription', 'Prescription Refills'),
         ('Nature', 'Field Supplements'),
         ('WholeShield', 'WholeShield Supplements'),
